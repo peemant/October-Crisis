@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9D824AE1C2DC7A30038AB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824AD1C2DC7A30038AB9E /* AppDelegate.swift */; };
+		A9D824B01C2DC7A30038AB9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824AF1C2DC7A30038AB9E /* ViewController.swift */; };
+		A9D824B31C2DC7A30038AB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D824B11C2DC7A30038AB9E /* Main.storyboard */; };
+		A9D824B61C2DC7A30038AB9E /* October_Crisis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9D824B41C2DC7A30038AB9E /* October_Crisis.xcdatamodeld */; };
+		A9D824B81C2DC7A30038AB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D824B71C2DC7A30038AB9E /* Assets.xcassets */; };
+		A9D824BB1C2DC7A30038AB9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D824B91C2DC7A30038AB9E /* LaunchScreen.storyboard */; };
+		A9D824C61C2DC7A30038AB9E /* October_CrisisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824C51C2DC7A30038AB9E /* October_CrisisTests.swift */; };
+		A9D824D11C2DC7A30038AB9E /* October_CrisisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824D01C2DC7A30038AB9E /* October_CrisisUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9D824C21C2DC7A30038AB9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D824A21C2DC7A20038AB9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D824A91C2DC7A30038AB9E;
+			remoteInfo = "October Crisis";
+		};
+		A9D824CD1C2DC7A30038AB9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D824A21C2DC7A20038AB9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D824A91C2DC7A30038AB9E;
+			remoteInfo = "October Crisis";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9D824AA1C2DC7A30038AB9E /* October Crisis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "October Crisis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D824AD1C2DC7A30038AB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9D824AF1C2DC7A30038AB9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9D824B21C2DC7A30038AB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9D824B51C2DC7A30038AB9E /* October_Crisis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = October_Crisis.xcdatamodel; sourceTree = "<group>"; };
+		A9D824B71C2DC7A30038AB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9D824BA1C2DC7A30038AB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9D824BC1C2DC7A30038AB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D824C11C2DC7A30038AB9E /* October CrisisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "October CrisisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D824C51C2DC7A30038AB9E /* October_CrisisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = October_CrisisTests.swift; sourceTree = "<group>"; };
+		A9D824C71C2DC7A30038AB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D824CC1C2DC7A30038AB9E /* October CrisisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "October CrisisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D824D01C2DC7A30038AB9E /* October_CrisisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = October_CrisisUITests.swift; sourceTree = "<group>"; };
+		A9D824D21C2DC7A30038AB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9D824A71C2DC7A30038AB9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D824BE1C2DC7A30038AB9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D824C91C2DC7A30038AB9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9D824A11C2DC7A20038AB9E = {
+			isa = PBXGroup;
+			children = (
+				A9D824AC1C2DC7A30038AB9E /* October Crisis */,
+				A9D824C41C2DC7A30038AB9E /* October CrisisTests */,
+				A9D824CF1C2DC7A30038AB9E /* October CrisisUITests */,
+				A9D824AB1C2DC7A30038AB9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9D824AB1C2DC7A30038AB9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D824AA1C2DC7A30038AB9E /* October Crisis.app */,
+				A9D824C11C2DC7A30038AB9E /* October CrisisTests.xctest */,
+				A9D824CC1C2DC7A30038AB9E /* October CrisisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9D824AC1C2DC7A30038AB9E /* October Crisis */ = {
+			isa = PBXGroup;
+			children = (
+				A9D824AD1C2DC7A30038AB9E /* AppDelegate.swift */,
+				A9D824AF1C2DC7A30038AB9E /* ViewController.swift */,
+				A9D824B11C2DC7A30038AB9E /* Main.storyboard */,
+				A9D824B71C2DC7A30038AB9E /* Assets.xcassets */,
+				A9D824B91C2DC7A30038AB9E /* LaunchScreen.storyboard */,
+				A9D824BC1C2DC7A30038AB9E /* Info.plist */,
+				A9D824B41C2DC7A30038AB9E /* October_Crisis.xcdatamodeld */,
+			);
+			path = "October Crisis";
+			sourceTree = "<group>";
+		};
+		A9D824C41C2DC7A30038AB9E /* October CrisisTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9D824C51C2DC7A30038AB9E /* October_CrisisTests.swift */,
+				A9D824C71C2DC7A30038AB9E /* Info.plist */,
+			);
+			path = "October CrisisTests";
+			sourceTree = "<group>";
+		};
+		A9D824CF1C2DC7A30038AB9E /* October CrisisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9D824D01C2DC7A30038AB9E /* October_CrisisUITests.swift */,
+				A9D824D21C2DC7A30038AB9E /* Info.plist */,
+			);
+			path = "October CrisisUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9D824A91C2DC7A30038AB9E /* October Crisis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D824D51C2DC7A30038AB9E /* Build configuration list for PBXNativeTarget "October Crisis" */;
+			buildPhases = (
+				A9D824A61C2DC7A30038AB9E /* Sources */,
+				A9D824A71C2DC7A30038AB9E /* Frameworks */,
+				A9D824A81C2DC7A30038AB9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "October Crisis";
+			productName = "October Crisis";
+			productReference = A9D824AA1C2DC7A30038AB9E /* October Crisis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9D824C01C2DC7A30038AB9E /* October CrisisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D824D81C2DC7A30038AB9E /* Build configuration list for PBXNativeTarget "October CrisisTests" */;
+			buildPhases = (
+				A9D824BD1C2DC7A30038AB9E /* Sources */,
+				A9D824BE1C2DC7A30038AB9E /* Frameworks */,
+				A9D824BF1C2DC7A30038AB9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9D824C31C2DC7A30038AB9E /* PBXTargetDependency */,
+			);
+			name = "October CrisisTests";
+			productName = "October CrisisTests";
+			productReference = A9D824C11C2DC7A30038AB9E /* October CrisisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9D824CB1C2DC7A30038AB9E /* October CrisisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D824DB1C2DC7A30038AB9E /* Build configuration list for PBXNativeTarget "October CrisisUITests" */;
+			buildPhases = (
+				A9D824C81C2DC7A30038AB9E /* Sources */,
+				A9D824C91C2DC7A30038AB9E /* Frameworks */,
+				A9D824CA1C2DC7A30038AB9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9D824CE1C2DC7A30038AB9E /* PBXTargetDependency */,
+			);
+			name = "October CrisisUITests";
+			productName = "October CrisisUITests";
+			productReference = A9D824CC1C2DC7A30038AB9E /* October CrisisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9D824A21C2DC7A20038AB9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Philippe Kahr";
+				TargetAttributes = {
+					A9D824A91C2DC7A30038AB9E = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					A9D824C01C2DC7A30038AB9E = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A9D824A91C2DC7A30038AB9E;
+					};
+					A9D824CB1C2DC7A30038AB9E = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A9D824A91C2DC7A30038AB9E;
+					};
+				};
+			};
+			buildConfigurationList = A9D824A51C2DC7A30038AB9E /* Build configuration list for PBXProject "October Crisis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9D824A11C2DC7A20038AB9E;
+			productRefGroup = A9D824AB1C2DC7A30038AB9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9D824A91C2DC7A30038AB9E /* October Crisis */,
+				A9D824C01C2DC7A30038AB9E /* October CrisisTests */,
+				A9D824CB1C2DC7A30038AB9E /* October CrisisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9D824A81C2DC7A30038AB9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D824BB1C2DC7A30038AB9E /* LaunchScreen.storyboard in Resources */,
+				A9D824B81C2DC7A30038AB9E /* Assets.xcassets in Resources */,
+				A9D824B31C2DC7A30038AB9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D824BF1C2DC7A30038AB9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D824CA1C2DC7A30038AB9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9D824A61C2DC7A30038AB9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D824B01C2DC7A30038AB9E /* ViewController.swift in Sources */,
+				A9D824B61C2DC7A30038AB9E /* October_Crisis.xcdatamodeld in Sources */,
+				A9D824AE1C2DC7A30038AB9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D824BD1C2DC7A30038AB9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D824C61C2DC7A30038AB9E /* October_CrisisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D824C81C2DC7A30038AB9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D824D11C2DC7A30038AB9E /* October_CrisisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9D824C31C2DC7A30038AB9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9D824A91C2DC7A30038AB9E /* October Crisis */;
+			targetProxy = A9D824C21C2DC7A30038AB9E /* PBXContainerItemProxy */;
+		};
+		A9D824CE1C2DC7A30038AB9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9D824A91C2DC7A30038AB9E /* October Crisis */;
+			targetProxy = A9D824CD1C2DC7A30038AB9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9D824B11C2DC7A30038AB9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D824B21C2DC7A30038AB9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9D824B91C2DC7A30038AB9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9D824BA1C2DC7A30038AB9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9D824D31C2DC7A30038AB9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9D824D41C2DC7A30038AB9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9D824D61C2DC7A30038AB9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "October Crisis/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippe.kahr.October-Crisis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9D824D71C2DC7A30038AB9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "October Crisis/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippe.kahr.October-Crisis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A9D824D91C2DC7A30038AB9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "October CrisisTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippe.kahr.October-CrisisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/October Crisis.app/October Crisis";
+			};
+			name = Debug;
+		};
+		A9D824DA1C2DC7A30038AB9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "October CrisisTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippe.kahr.October-CrisisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/October Crisis.app/October Crisis";
+			};
+			name = Release;
+		};
+		A9D824DC1C2DC7A30038AB9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "October CrisisUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippe.kahr.October-CrisisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "October Crisis";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A9D824DD1C2DC7A30038AB9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "October CrisisUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippe.kahr.October-CrisisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "October Crisis";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9D824A51C2DC7A30038AB9E /* Build configuration list for PBXProject "October Crisis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D824D31C2DC7A30038AB9E /* Debug */,
+				A9D824D41C2DC7A30038AB9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D824D51C2DC7A30038AB9E /* Build configuration list for PBXNativeTarget "October Crisis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D824D61C2DC7A30038AB9E /* Debug */,
+				A9D824D71C2DC7A30038AB9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9D824D81C2DC7A30038AB9E /* Build configuration list for PBXNativeTarget "October CrisisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D824D91C2DC7A30038AB9E /* Debug */,
+				A9D824DA1C2DC7A30038AB9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9D824DB1C2DC7A30038AB9E /* Build configuration list for PBXNativeTarget "October CrisisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D824DC1C2DC7A30038AB9E /* Debug */,
+				A9D824DD1C2DC7A30038AB9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A9D824B41C2DC7A30038AB9E /* October_Crisis.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9D824B51C2DC7A30038AB9E /* October_Crisis.xcdatamodel */,
+			);
+			currentVersion = A9D824B51C2DC7A30038AB9E /* October_Crisis.xcdatamodel */;
+			path = October_Crisis.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A9D824A21C2DC7A20038AB9E /* Project object */;
+}
