@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="October_Crisis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,377 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOC-a4-Xfe">
+                                <rect key="frame" x="75" y="95" width="73" height="30"/>
+                                <animations/>
+                                <state key="normal" title="New game"/>
+                                <connections>
+                                    <segue destination="s32-LO-xs1" kind="show" id="d7O-vP-9sb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HOC-a4-Xfe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="fSn-At-4tc"/>
+                            <constraint firstItem="HOC-a4-Xfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="mUW-fd-wve"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="313" y="384"/>
+        </scene>
+        <!--Main Widow Game View-->
+        <scene sceneID="4v1-ed-ADc">
+            <objects>
+                <viewController id="s32-LO-xs1" customClass="MainWidowGameView" customModule="October_Crisis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gDk-nJ-K5i"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKU-Bv-vbO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VMo-oe-sJf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QXm-mC-cbv">
+                                <rect key="frame" x="20" y="181" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="s32-LO-xs1" eventType="touchUpInside" id="J3N-LL-4m1"/>
+                                    <segue destination="5ea-se-P3a" kind="show" id="ytF-ho-5Fd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="PQd-hh-HKU">
+                                <rect key="frame" x="20" y="219" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="s32-LO-xs1" eventType="touchUpInside" id="y1g-7Y-UVc"/>
+                                    <segue destination="5ea-se-P3a" kind="show" id="ZEH-UA-BFf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iF3-eo-zG9">
+                                <rect key="frame" x="20" y="257" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="s32-LO-xs1" eventType="touchUpInside" id="gah-fK-sCx"/>
+                                    <segue destination="5ea-se-P3a" kind="show" id="4Ja-R2-65v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TD6-iP-JQU">
+                                <rect key="frame" x="20" y="333" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionFive:" destination="s32-LO-xs1" eventType="touchUpInside" id="56A-RO-8hV"/>
+                                    <segue destination="5ea-se-P3a" kind="show" id="WVa-y7-1HL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oHE-3t-vMn">
+                                <rect key="frame" x="20" y="295" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionFour:" destination="s32-LO-xs1" eventType="touchUpInside" id="dmM-dr-w8c"/>
+                                    <segue destination="5ea-se-P3a" kind="show" id="jU5-K0-Ruq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr3-SI-fZW">
+                                <rect key="frame" x="20" y="51" width="560" height="122"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TD6-iP-JQU" firstAttribute="top" secondItem="oHE-3t-vMn" secondAttribute="bottom" constant="8" id="0K5-xA-fu3"/>
+                            <constraint firstItem="gr3-SI-fZW" firstAttribute="centerY" secondItem="VMo-oe-sJf" secondAttribute="centerY" id="0b8-Mo-1tF"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TD6-iP-JQU" secondAttribute="leading" id="5jM-WE-3rS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oHE-3t-vMn" secondAttribute="leading" id="6q6-S7-2m1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="iF3-eo-zG9" secondAttribute="leading" id="8Bh-Lu-ZR1"/>
+                            <constraint firstItem="QXm-mC-cbv" firstAttribute="top" secondItem="gr3-SI-fZW" secondAttribute="bottom" constant="8" id="CtF-1W-LXn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PQd-hh-HKU" secondAttribute="trailing" id="HXD-2R-rdX"/>
+                            <constraint firstItem="PQd-hh-HKU" firstAttribute="top" secondItem="QXm-mC-cbv" secondAttribute="bottom" constant="8" id="Mg0-ZT-nxk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gr3-SI-fZW" secondAttribute="trailing" id="NOz-gL-86t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QXm-mC-cbv" secondAttribute="trailing" id="NbM-9T-KWP"/>
+                            <constraint firstItem="oHE-3t-vMn" firstAttribute="top" secondItem="iF3-eo-zG9" secondAttribute="bottom" constant="8" id="Q8m-7s-3os"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iF3-eo-zG9" secondAttribute="trailing" id="QlJ-Zt-bMV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="QXm-mC-cbv" secondAttribute="leading" id="TYg-Ng-uQX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gr3-SI-fZW" secondAttribute="leading" id="W1k-OR-jwg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oHE-3t-vMn" secondAttribute="trailing" id="eHm-c7-Bo8"/>
+                            <constraint firstItem="gr3-SI-fZW" firstAttribute="top" secondItem="gDk-nJ-K5i" secondAttribute="bottom" constant="31" id="eMS-vk-ujW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PQd-hh-HKU" secondAttribute="leading" id="h28-Vk-ohz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TD6-iP-JQU" secondAttribute="trailing" id="kRE-To-iBH"/>
+                            <constraint firstItem="oHE-3t-vMn" firstAttribute="top" secondItem="iF3-eo-zG9" secondAttribute="bottom" constant="8" id="mxS-qy-ew4"/>
+                            <constraint firstItem="iF3-eo-zG9" firstAttribute="top" secondItem="PQd-hh-HKU" secondAttribute="bottom" constant="8" id="oiD-D8-RGM"/>
+                            <constraint firstItem="gr3-SI-fZW" firstAttribute="top" secondItem="gDk-nJ-K5i" secondAttribute="bottom" constant="31" id="z83-PS-bEU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0b8-Mo-1tF"/>
+                                <exclude reference="eMS-vk-ujW"/>
+                                <exclude reference="mxS-qy-ew4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFive" destination="TD6-iP-JQU" id="FI3-HH-fUP"/>
+                        <outlet property="buttonFour" destination="oHE-3t-vMn" id="nJb-5i-jEi"/>
+                        <outlet property="buttonOne" destination="QXm-mC-cbv" id="uVb-1N-HF7"/>
+                        <outlet property="buttonThree" destination="iF3-eo-zG9" id="hli-n9-gcq"/>
+                        <outlet property="buttonTwo" destination="PQd-hh-HKU" id="tbH-xJ-pmA"/>
+                        <outlet property="question" destination="gr3-SI-fZW" id="zow-R8-LhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jzw-IN-WTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931" y="-396"/>
+        </scene>
+        <!--Question Two-->
+        <scene sceneID="nKF-k1-dEN">
+            <objects>
+                <viewController id="5ea-se-P3a" customClass="QuestionTwo" customModule="October_Crisis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="knp-ju-gqw"/>
+                        <viewControllerLayoutGuide type="bottom" id="NDF-qI-c8d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JKj-O2-gPy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="N5b-sA-iEI">
+                                <rect key="frame" x="20" y="181" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="5ea-se-P3a" eventType="touchUpInside" id="5G2-D2-Jn4"/>
+                                    <segue destination="FR5-Xw-zI9" kind="show" id="TJC-ox-nRi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dOl-0t-TSu">
+                                <rect key="frame" x="20" y="219" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="5ea-se-P3a" eventType="touchUpInside" id="OFh-ln-c6I"/>
+                                    <segue destination="FR5-Xw-zI9" kind="show" id="gdw-Zo-Oy5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZZX-sU-OtI">
+                                <rect key="frame" x="20" y="257" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="5ea-se-P3a" eventType="touchUpInside" id="9oZ-dn-g9x"/>
+                                    <segue destination="FR5-Xw-zI9" kind="show" id="eBM-cF-ZUY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9Ls-gs-WFh">
+                                <rect key="frame" x="20" y="333" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionFive:" destination="5ea-se-P3a" eventType="touchUpInside" id="RXZ-V7-34T"/>
+                                    <segue destination="FR5-Xw-zI9" kind="show" id="ZP5-eK-Fge"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYG-bh-tBG">
+                                <rect key="frame" x="20" y="51" width="560" height="122"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pv3-kA-s6F">
+                                <rect key="frame" x="20" y="295" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionFour:" destination="5ea-se-P3a" eventType="touchUpInside" id="MJw-F2-5OS"/>
+                                    <segue destination="FR5-Xw-zI9" kind="show" id="JmP-kH-ejw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N5b-sA-iEI" firstAttribute="top" secondItem="sYG-bh-tBG" secondAttribute="bottom" constant="8" id="5hW-7O-k4b"/>
+                            <constraint firstItem="dOl-0t-TSu" firstAttribute="top" secondItem="N5b-sA-iEI" secondAttribute="bottom" constant="8" id="9Qa-7n-1BK"/>
+                            <constraint firstItem="9Ls-gs-WFh" firstAttribute="top" secondItem="pv3-kA-s6F" secondAttribute="bottom" constant="8" id="ARS-fY-eLG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dOl-0t-TSu" secondAttribute="leading" id="JOl-Hf-osH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pv3-kA-s6F" secondAttribute="trailing" id="M4w-5Z-dFc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Ls-gs-WFh" secondAttribute="trailing" id="Nb4-cv-O1z"/>
+                            <constraint firstItem="ZZX-sU-OtI" firstAttribute="top" secondItem="dOl-0t-TSu" secondAttribute="bottom" constant="8" id="NvK-co-I2Y"/>
+                            <constraint firstItem="sYG-bh-tBG" firstAttribute="centerY" secondItem="JKj-O2-gPy" secondAttribute="centerY" id="P1d-be-mbc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZZX-sU-OtI" secondAttribute="trailing" id="Zir-Yg-U2Z"/>
+                            <constraint firstItem="pv3-kA-s6F" firstAttribute="top" secondItem="ZZX-sU-OtI" secondAttribute="bottom" constant="8" id="b0v-Ag-MVw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dOl-0t-TSu" secondAttribute="trailing" id="cc3-M5-Pir"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N5b-sA-iEI" secondAttribute="trailing" id="eY9-ya-kWa"/>
+                            <constraint firstItem="sYG-bh-tBG" firstAttribute="top" secondItem="knp-ju-gqw" secondAttribute="bottom" constant="31" id="hH4-k8-RbQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZZX-sU-OtI" secondAttribute="leading" id="ilu-zx-b9i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sYG-bh-tBG" secondAttribute="trailing" id="lnj-f7-asw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pv3-kA-s6F" secondAttribute="leading" id="mgW-Ej-gKe"/>
+                            <constraint firstItem="sYG-bh-tBG" firstAttribute="top" secondItem="knp-ju-gqw" secondAttribute="bottom" constant="31" id="oKU-0K-e7J"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9Ls-gs-WFh" secondAttribute="leading" id="ofv-uF-u56"/>
+                            <constraint firstItem="pv3-kA-s6F" firstAttribute="top" secondItem="ZZX-sU-OtI" secondAttribute="bottom" constant="8" id="rcB-d5-KHC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sYG-bh-tBG" secondAttribute="leading" id="ueB-bD-gTF"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="N5b-sA-iEI" secondAttribute="leading" id="xvb-1g-WYO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="P1d-be-mbc"/>
+                                <exclude reference="oKU-0K-e7J"/>
+                                <exclude reference="b0v-Ag-MVw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFive" destination="9Ls-gs-WFh" id="ZCW-qU-SnX"/>
+                        <outlet property="buttonFour" destination="pv3-kA-s6F" id="UfO-bi-cux"/>
+                        <outlet property="buttonOne" destination="N5b-sA-iEI" id="8Fj-tt-8kj"/>
+                        <outlet property="buttonThree" destination="ZZX-sU-OtI" id="Tlz-2g-swz"/>
+                        <outlet property="buttonTwo" destination="dOl-0t-TSu" id="lMY-gA-JOe"/>
+                        <outlet property="question" destination="sYG-bh-tBG" id="U9w-5z-Kag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AE-1X-BKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="-424"/>
+        </scene>
+        <!--Question Three-->
+        <scene sceneID="nfL-yb-IDA">
+            <objects>
+                <viewController id="FR5-Xw-zI9" customClass="QuestionThree" customModule="October_Crisis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hhc-jX-ZQb"/>
+                        <viewControllerLayoutGuide type="bottom" id="w3A-HK-nI9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jQ9-Fw-mOM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dig-QT-yjZ">
+                                <rect key="frame" x="20" y="181" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="FR5-Xw-zI9" eventType="touchUpInside" id="t1z-hU-ra7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jje-vQ-2bS">
+                                <rect key="frame" x="20" y="219" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="FR5-Xw-zI9" eventType="touchUpInside" id="bZK-OF-Gwe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="KPU-Kc-MUb">
+                                <rect key="frame" x="20" y="257" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="FR5-Xw-zI9" eventType="touchUpInside" id="mDS-2p-Ubm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2hf-QW-gvb">
+                                <rect key="frame" x="20" y="333" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionFive:" destination="FR5-Xw-zI9" eventType="touchUpInside" id="HvV-gI-Oiv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgB-yh-Dpb">
+                                <rect key="frame" x="20" y="51" width="560" height="122"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="H9X-PY-fAk">
+                                <rect key="frame" x="20" y="295" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="optionFour:" destination="FR5-Xw-zI9" eventType="touchUpInside" id="ygF-jb-Xlq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H9X-PY-fAk" firstAttribute="top" secondItem="KPU-Kc-MUb" secondAttribute="bottom" constant="8" id="1q9-qf-azc"/>
+                            <constraint firstItem="wgB-yh-Dpb" firstAttribute="centerY" secondItem="jQ9-Fw-mOM" secondAttribute="centerY" id="4N9-sa-lEs"/>
+                            <constraint firstItem="wgB-yh-Dpb" firstAttribute="top" secondItem="hhc-jX-ZQb" secondAttribute="bottom" constant="31" id="5nL-we-kji"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jje-vQ-2bS" secondAttribute="trailing" id="7eY-AB-VqB"/>
+                            <constraint firstItem="dig-QT-yjZ" firstAttribute="top" secondItem="wgB-yh-Dpb" secondAttribute="bottom" constant="8" id="Bmf-73-cpf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jje-vQ-2bS" secondAttribute="leading" id="C7c-fL-8bs"/>
+                            <constraint firstItem="KPU-Kc-MUb" firstAttribute="top" secondItem="jje-vQ-2bS" secondAttribute="bottom" constant="8" id="IIK-xy-kFk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H9X-PY-fAk" secondAttribute="trailing" id="Llh-Th-vHy"/>
+                            <constraint firstItem="2hf-QW-gvb" firstAttribute="top" secondItem="H9X-PY-fAk" secondAttribute="bottom" constant="8" id="MCf-hM-2Mh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wgB-yh-Dpb" secondAttribute="leading" id="Nt5-7r-F3L"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="H9X-PY-fAk" secondAttribute="leading" id="Of7-ny-zN9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KPU-Kc-MUb" secondAttribute="leading" id="cPO-Rs-Tc7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2hf-QW-gvb" secondAttribute="trailing" id="cjY-68-PdI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KPU-Kc-MUb" secondAttribute="trailing" id="dMA-gY-8b3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wgB-yh-Dpb" secondAttribute="trailing" id="dlI-vg-gSY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="2hf-QW-gvb" secondAttribute="leading" id="gKQ-ij-xI7"/>
+                            <constraint firstItem="H9X-PY-fAk" firstAttribute="top" secondItem="KPU-Kc-MUb" secondAttribute="bottom" constant="8" id="guR-ED-B1c"/>
+                            <constraint firstItem="wgB-yh-Dpb" firstAttribute="top" secondItem="hhc-jX-ZQb" secondAttribute="bottom" constant="31" id="huv-Xf-Jir"/>
+                            <constraint firstItem="jje-vQ-2bS" firstAttribute="top" secondItem="dig-QT-yjZ" secondAttribute="bottom" constant="8" id="jAB-nd-aBM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dig-QT-yjZ" secondAttribute="trailing" id="kMQ-aU-ugz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dig-QT-yjZ" secondAttribute="leading" id="kN8-Un-ojN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4N9-sa-lEs"/>
+                                <exclude reference="huv-Xf-Jir"/>
+                                <exclude reference="1q9-qf-azc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFive" destination="2hf-QW-gvb" id="VJf-42-v40"/>
+                        <outlet property="buttonFour" destination="H9X-PY-fAk" id="CvQ-na-PwS"/>
+                        <outlet property="buttonOne" destination="dig-QT-yjZ" id="z79-98-rNw"/>
+                        <outlet property="buttonThree" destination="KPU-Kc-MUb" id="u19-NF-Vtk"/>
+                        <outlet property="buttonTwo" destination="jje-vQ-2bS" id="HG9-34-mEc"/>
+                        <outlet property="question" destination="wgB-yh-Dpb" id="86f-bS-5Es"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YC3-Fa-M4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364" y="-424"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ytF-ho-5Fd"/>
+        <segue reference="gdw-Zo-Oy5"/>
+    </inferredMetricsTieBreakers>
 </document>
