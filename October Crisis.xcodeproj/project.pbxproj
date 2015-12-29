@@ -21,15 +21,7 @@
 		A9D824E71C2DCFCD0038AB9E /* bidon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824E61C2DCFCD0038AB9E /* bidon.swift */; settings = {ASSET_TAGS = (); }; };
 		A9D824E91C2DD1120038AB9E /* PlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824E81C2DD1120038AB9E /* PlayerCharacter.swift */; settings = {ASSET_TAGS = (); }; };
 		A9D824ED1C3000EB0038AB9E /* MainWidowGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824EC1C3000EB0038AB9E /* MainWidowGameView.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D824F01C304B1C0038AB9E /* QuestionTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824EF1C304B1C0038AB9E /* QuestionTwo.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D824F21C308ECA0038AB9E /* QuestionThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824F11C308ECA0038AB9E /* QuestionThree.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D824F41C3098410038AB9E /* QuestionFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824F31C3098410038AB9E /* QuestionFour.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D824F61C3098560038AB9E /* QuestionFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824F51C3098560038AB9E /* QuestionFive.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D824F81C30986B0038AB9E /* QuestionSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824F71C30986B0038AB9E /* QuestionSix.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D824FA1C30987D0038AB9E /* QuestionSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824F91C30987D0038AB9E /* QuestionSeven.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D824FC1C30989F0038AB9E /* QuestionEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824FB1C30989F0038AB9E /* QuestionEight.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D824FE1C3098B00038AB9E /* QuestionNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824FD1C3098B00038AB9E /* QuestionNine.swift */; settings = {ASSET_TAGS = (); }; };
-		A9D825001C3098C20038AB9E /* QuestionTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824FF1C3098C20038AB9E /* QuestionTen.swift */; settings = {ASSET_TAGS = (); }; };
+		A9D825021C31F3A90038AB9E /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D825011C31F3A90038AB9E /* QuestionPresenter.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,15 +62,7 @@
 		A9D824E61C2DCFCD0038AB9E /* bidon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bidon.swift; sourceTree = "<group>"; };
 		A9D824E81C2DD1120038AB9E /* PlayerCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCharacter.swift; sourceTree = "<group>"; };
 		A9D824EC1C3000EB0038AB9E /* MainWidowGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWidowGameView.swift; sourceTree = "<group>"; };
-		A9D824EF1C304B1C0038AB9E /* QuestionTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTwo.swift; sourceTree = "<group>"; };
-		A9D824F11C308ECA0038AB9E /* QuestionThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionThree.swift; sourceTree = "<group>"; };
-		A9D824F31C3098410038AB9E /* QuestionFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionFour.swift; sourceTree = "<group>"; };
-		A9D824F51C3098560038AB9E /* QuestionFive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionFive.swift; sourceTree = "<group>"; };
-		A9D824F71C30986B0038AB9E /* QuestionSix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionSix.swift; sourceTree = "<group>"; };
-		A9D824F91C30987D0038AB9E /* QuestionSeven.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionSeven.swift; sourceTree = "<group>"; };
-		A9D824FB1C30989F0038AB9E /* QuestionEight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionEight.swift; sourceTree = "<group>"; };
-		A9D824FD1C3098B00038AB9E /* QuestionNine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionNine.swift; sourceTree = "<group>"; };
-		A9D824FF1C3098C20038AB9E /* QuestionTen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTen.swift; sourceTree = "<group>"; };
+		A9D825011C31F3A90038AB9E /* QuestionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,15 +152,7 @@
 			children = (
 				A9D824AF1C2DC7A30038AB9E /* ViewController.swift */,
 				A9D824EC1C3000EB0038AB9E /* MainWidowGameView.swift */,
-				A9D824EF1C304B1C0038AB9E /* QuestionTwo.swift */,
-				A9D824F11C308ECA0038AB9E /* QuestionThree.swift */,
-				A9D824F31C3098410038AB9E /* QuestionFour.swift */,
-				A9D824F51C3098560038AB9E /* QuestionFive.swift */,
-				A9D824F71C30986B0038AB9E /* QuestionSix.swift */,
-				A9D824F91C30987D0038AB9E /* QuestionSeven.swift */,
-				A9D824FB1C30989F0038AB9E /* QuestionEight.swift */,
-				A9D824FD1C3098B00038AB9E /* QuestionNine.swift */,
-				A9D824FF1C3098C20038AB9E /* QuestionTen.swift */,
+				A9D825011C31F3A90038AB9E /* QuestionPresenter.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -311,24 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D824FA1C30987D0038AB9E /* QuestionSeven.swift in Sources */,
 				A9D824B01C2DC7A30038AB9E /* ViewController.swift in Sources */,
-				A9D824FE1C3098B00038AB9E /* QuestionNine.swift in Sources */,
-				A9D824F61C3098560038AB9E /* QuestionFive.swift in Sources */,
 				A9D824E71C2DCFCD0038AB9E /* bidon.swift in Sources */,
 				A9D824E91C2DD1120038AB9E /* PlayerCharacter.swift in Sources */,
-				A9D824F81C30986B0038AB9E /* QuestionSix.swift in Sources */,
-				A9D825001C3098C20038AB9E /* QuestionTen.swift in Sources */,
 				A9D824E31C2DCA5F0038AB9E /* Game.swift in Sources */,
-				A9D824FC1C30989F0038AB9E /* QuestionEight.swift in Sources */,
 				A9D824B61C2DC7A30038AB9E /* October_Crisis.xcdatamodeld in Sources */,
-				A9D824F41C3098410038AB9E /* QuestionFour.swift in Sources */,
 				A9D824ED1C3000EB0038AB9E /* MainWidowGameView.swift in Sources */,
-				A9D824F01C304B1C0038AB9E /* QuestionTwo.swift in Sources */,
+				A9D825021C31F3A90038AB9E /* QuestionPresenter.swift in Sources */,
 				A9D824E51C2DCA9A0038AB9E /* Questions.swift in Sources */,
 				A9D824DF1C2DC8370038AB9E /* Vehicules.swift in Sources */,
 				A9D824AE1C2DC7A30038AB9E /* AppDelegate.swift in Sources */,
-				A9D824F21C308ECA0038AB9E /* QuestionThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
