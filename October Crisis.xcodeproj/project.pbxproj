@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9532FEB1C3AC70D00FBB52A /* PlayerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532FEA1C3AC70D00FBB52A /* PlayerViewViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A9532FED1C3ACA9500FBB52A /* Squads.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532FEC1C3ACA9500FBB52A /* Squads.swift */; settings = {ASSET_TAGS = (); }; };
+		A9532FEF1C3ACBF900FBB52A /* Recruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532FEE1C3ACBF900FBB52A /* Recruits.swift */; settings = {ASSET_TAGS = (); }; };
+		A9532FF21C3ACDAF00FBB52A /* SaveFile.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9532FF11C3ACDAF00FBB52A /* SaveFile.plist */; settings = {ASSET_TAGS = (); }; };
+		A9532FF41C3AF15C00FBB52A /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532FF31C3AF15C00FBB52A /* DataManagement.swift */; settings = {ASSET_TAGS = (); }; };
 		A9D824AE1C2DC7A30038AB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824AD1C2DC7A30038AB9E /* AppDelegate.swift */; };
 		A9D824B01C2DC7A30038AB9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824AF1C2DC7A30038AB9E /* ViewController.swift */; };
 		A9D824B31C2DC7A30038AB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D824B11C2DC7A30038AB9E /* Main.storyboard */; };
@@ -22,6 +27,7 @@
 		A9D824E91C2DD1120038AB9E /* PlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824E81C2DD1120038AB9E /* PlayerCharacter.swift */; settings = {ASSET_TAGS = (); }; };
 		A9D824ED1C3000EB0038AB9E /* MainWidowGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D824EC1C3000EB0038AB9E /* MainWidowGameView.swift */; settings = {ASSET_TAGS = (); }; };
 		A9D825021C31F3A90038AB9E /* QuestionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D825011C31F3A90038AB9E /* QuestionPresenter.swift */; settings = {ASSET_TAGS = (); }; };
+		A9D825041C32E3B00038AB9E /* Game Notes (Player Skills and Attributes) in Resources */ = {isa = PBXBuildFile; fileRef = A9D825031C32E3B00038AB9E /* Game Notes (Player Skills and Attributes) */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9532FEA1C3AC70D00FBB52A /* PlayerViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewViewController.swift; sourceTree = "<group>"; };
+		A9532FEC1C3ACA9500FBB52A /* Squads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squads.swift; sourceTree = "<group>"; };
+		A9532FEE1C3ACBF900FBB52A /* Recruits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recruits.swift; sourceTree = "<group>"; };
+		A9532FF11C3ACDAF00FBB52A /* SaveFile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SaveFile.plist; sourceTree = "<group>"; };
+		A9532FF31C3AF15C00FBB52A /* DataManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		A9D824AA1C2DC7A30038AB9E /* October Crisis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "October Crisis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D824AD1C2DC7A30038AB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D824AF1C2DC7A30038AB9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +74,7 @@
 		A9D824E81C2DD1120038AB9E /* PlayerCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCharacter.swift; sourceTree = "<group>"; };
 		A9D824EC1C3000EB0038AB9E /* MainWidowGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWidowGameView.swift; sourceTree = "<group>"; };
 		A9D825011C31F3A90038AB9E /* QuestionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPresenter.swift; sourceTree = "<group>"; };
+		A9D825031C32E3B00038AB9E /* Game Notes (Player Skills and Attributes) */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Game Notes (Player Skills and Attributes)"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9532FF01C3ACD7F00FBB52A /* SavedData */ = {
+			isa = PBXGroup;
+			children = (
+				A9532FF11C3ACDAF00FBB52A /* SaveFile.plist */,
+				A9532FF31C3AF15C00FBB52A /* DataManagement.swift */,
+			);
+			name = SavedData;
+			sourceTree = "<group>";
+		};
 		A9D824A11C2DC7A20038AB9E = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +134,7 @@
 		A9D824AC1C2DC7A30038AB9E /* October Crisis */ = {
 			isa = PBXGroup;
 			children = (
+				A9532FF01C3ACD7F00FBB52A /* SavedData */,
 				A9D824EE1C3000F30038AB9E /* View Controllers */,
 				A9D824AD1C2DC7A30038AB9E /* AppDelegate.swift */,
 				A9D824B11C2DC7A30038AB9E /* Main.storyboard */,
@@ -120,11 +142,14 @@
 				A9D824B91C2DC7A30038AB9E /* LaunchScreen.storyboard */,
 				A9D824BC1C2DC7A30038AB9E /* Info.plist */,
 				A9D824B41C2DC7A30038AB9E /* October_Crisis.xcdatamodeld */,
-				A9D824DE1C2DC8370038AB9E /* Vehicules.swift */,
 				A9D824E21C2DCA5F0038AB9E /* Game.swift */,
 				A9D824E41C2DCA9A0038AB9E /* Questions.swift */,
 				A9D824E61C2DCFCD0038AB9E /* bidon.swift */,
+				A9532FEC1C3ACA9500FBB52A /* Squads.swift */,
 				A9D824E81C2DD1120038AB9E /* PlayerCharacter.swift */,
+				A9532FEE1C3ACBF900FBB52A /* Recruits.swift */,
+				A9D824DE1C2DC8370038AB9E /* Vehicules.swift */,
+				A9D825031C32E3B00038AB9E /* Game Notes (Player Skills and Attributes) */,
 			);
 			path = "October Crisis";
 			sourceTree = "<group>";
@@ -153,6 +178,7 @@
 				A9D824AF1C2DC7A30038AB9E /* ViewController.swift */,
 				A9D824EC1C3000EB0038AB9E /* MainWidowGameView.swift */,
 				A9D825011C31F3A90038AB9E /* QuestionPresenter.swift */,
+				A9532FEA1C3AC70D00FBB52A /* PlayerViewViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -261,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D824BB1C2DC7A30038AB9E /* LaunchScreen.storyboard in Resources */,
+				A9D825041C32E3B00038AB9E /* Game Notes (Player Skills and Attributes) in Resources */,
 				A9D824B81C2DC7A30038AB9E /* Assets.xcassets in Resources */,
 				A9D824B31C2DC7A30038AB9E /* Main.storyboard in Resources */,
+				A9532FF21C3ACDAF00FBB52A /* SaveFile.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,15 +315,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9532FED1C3ACA9500FBB52A /* Squads.swift in Sources */,
 				A9D824B01C2DC7A30038AB9E /* ViewController.swift in Sources */,
 				A9D824E71C2DCFCD0038AB9E /* bidon.swift in Sources */,
 				A9D824E91C2DD1120038AB9E /* PlayerCharacter.swift in Sources */,
 				A9D824E31C2DCA5F0038AB9E /* Game.swift in Sources */,
 				A9D824B61C2DC7A30038AB9E /* October_Crisis.xcdatamodeld in Sources */,
+				A9532FF41C3AF15C00FBB52A /* DataManagement.swift in Sources */,
 				A9D824ED1C3000EB0038AB9E /* MainWidowGameView.swift in Sources */,
 				A9D825021C31F3A90038AB9E /* QuestionPresenter.swift in Sources */,
 				A9D824E51C2DCA9A0038AB9E /* Questions.swift in Sources */,
 				A9D824DF1C2DC8370038AB9E /* Vehicules.swift in Sources */,
+				A9532FEB1C3AC70D00FBB52A /* PlayerViewViewController.swift in Sources */,
+				A9532FEF1C3ACBF900FBB52A /* Recruits.swift in Sources */,
 				A9D824AE1C2DC7A30038AB9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,15 +26,15 @@ class Questions: NSObject {
         let optionThreeA : String = "C - the Macintosh was introduced."
         let optionFourA : String = "D - the Nobel Peace Prize went to Desmond Tutu for opposition to apartheid."
         let optionFiveA : String = "E - the Sandanista Front won the elections in Nicaragua."
-
+        
         self.question = questionA
         self.optionOne = optionOneA
         self.optionTwo = optionTwoA
         self.optionThree = optionThreeA
         self.optionFour = optionFourA
         self.optionFive = optionFiveA
-    
-    
+        
+        
     }
     
     func questionTwo(){
@@ -54,7 +54,7 @@ class Questions: NSObject {
         self.optionFive = optionFiveA
         
     }
-
+    
     func questionThree(){
         
         let questionA : String = "In elementary school..."
@@ -198,11 +198,309 @@ class Questions: NSObject {
         
     }
     
-    func answerForQuestionOne(){
+    func answerForQuestion(questionID: Int, optionChosen: Int, playerCharacter: PlayerCharacter) -> PlayerCharacter{
         
+        /**
         
+        This function is used to answer a question
         
+        Parameter questionID : Is a question integer from 1 to 10 that represents the question you want answered
+        Parameter optionChosen : Is an integer from 1 to 5 that reprensent the option chosen by the user
+        Parameter playerCharacter : Is a PlayerCharacter object for that is being configured
+        
+        Returns : A PlayerCharacter() instance with updated skill and attributes.
+        
+        Throws :  An invalid optionChosen when optionChosen is not between 1 to 5
+        
+        */
+        
+        if (questionID == 1){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 2
+                return playerCharacter
+            case 2:
+                playerCharacter.ATTRIBUTE_STRENGTH += 2
+                return playerCharacter
+            case 3:
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 2
+                return playerCharacter
+            case 4:
+                playerCharacter.ATTRIBUTE_CONSTITUTION += 3
+                return playerCharacter
+            case 5:
+                playerCharacter.ATTRIBUTE_CHARISMA += 2
+                return playerCharacter
+            default: print("Invalid optionChosen")
+                
+            }
+            
+        }else if (questionID == 2){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 1
+                playerCharacter.SKILL_SECURITY += 1
+                return playerCharacter
+            case 2:
+                playerCharacter.ATTRIBUTE_HEALTH += 1
+                playerCharacter.SKILL_HANDCOMBAT += 1
+                return playerCharacter
+            case 3:
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 1
+                playerCharacter.SKILL_WRITING += 1
+                return playerCharacter
+            case 4:
+                playerCharacter.ATTRIBUTE_CONSTITUTION += 1
+                playerCharacter.SKILL_PERSUASION += 1
+                return playerCharacter
+            case 5:
+                playerCharacter.ATTRIBUTE_CHARISMA += 1
+                playerCharacter.SKILL_PERSUASION += 1
+                return playerCharacter
+            default: print("Invalid optionChosen")
+                
+            }
+            
+            
+        }else if (questionID == 3){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 1
+                playerCharacter.SKILL_DISGUISE += 1
+                return playerCharacter
+            case 2:
+                playerCharacter.SKILL_PSYCOLOGY += 1
+                playerCharacter.ATTRIBUTE_STRENGTH += 1
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 1
+                playerCharacter.ATTRIBUTE_CONSTITUTION -= 1
+                return playerCharacter
+            case 3:
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 1
+                playerCharacter.SKILL_WRITING += 1
+                return playerCharacter
+            case 4:
+                playerCharacter.ATTRIBUTE_STRENGTH += 1
+                playerCharacter.SKILL_HANDCOMBAT += 1
+                return playerCharacter
+            case 5:
+                playerCharacter.ATTRIBUTE_CHARISMA += 1
+                playerCharacter.SKILL_PERSUASION += 1
+                return playerCharacter
+            default: print("Invalid optionChosen")
+                
+            }
+            
+        }else if (questionID == 4){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.SKILL_STEALTH += 1
+                return playerCharacter
+            case 2:
+                playerCharacter.SKILL_HANDCOMBAT += 1
+                return playerCharacter
+            case 3:
+                playerCharacter.SKILL_LAW += 1
+                return playerCharacter
+            case 4:
+                playerCharacter.SKILL_SEDUCTION += 1
+                return playerCharacter
+            case 5:
+                playerCharacter.SKILL_WRITING += 1
+                return playerCharacter
+            default: print("Invalid optionChosen")
+            }
+            
+        }else if (questionID == 5){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.SKILL_SCIENCE += 2
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 2
+                return playerCharacter
+            case 2:
+                playerCharacter.SKILL_MUSIC += 2
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 2
+                return playerCharacter
+            case 3:
+                playerCharacter.ATTRIBUTE_CONSTITUTION += 2
+                playerCharacter.SKILL_ART += 2
+                return playerCharacter
+            case 4:
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 2
+                playerCharacter.SKILL_COMPUTERS += 2
+                return playerCharacter
+            case 5:
+                playerCharacter.ATTRIBUTE_STRENGTH += 1
+                playerCharacter.SKILL_SWORD += 2
+                return playerCharacter
+            default: print("Invalid optionChosen")
+                
+            }
+            
+        }else if (questionID == 6){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.SKILL_DRIVING += 1
+                playerCharacter.SKILL_SECURITY += 1
+                return playerCharacter
+            case 2:
+                playerCharacter.SKILL_SHOTGUN += 1
+                playerCharacter.SKILL_RIFLE += 1
+                playerCharacter.SKILL_PSYCOLOGY += 1
+                return playerCharacter
+            case 3:
+                playerCharacter.SKILL_TAILORING += 2
+                return playerCharacter
+            case 4:
+                playerCharacter.SKILL_RELIGION += 1
+                playerCharacter.SKILL_PSYCOLOGY += 1
+                return playerCharacter
+            case 5:
+                playerCharacter.SKILL_TEACHING += 1
+                return playerCharacter
+            default: print("Invalid optionChosen")
+                
+            }
+            
+        }else if (questionID == 7){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.SKILL_DRIVING += 1
+                playerCharacter.SKILL_SECURITY += 1
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 1
+                return playerCharacter
+            case 2:
+                playerCharacter.SKILL_SHOTGUN += 1
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 1
+                return playerCharacter
+            case 3:
+                playerCharacter.ATTRIBUTE_STRENGTH += 1
+                playerCharacter.SKILL_HANDCOMBAT += 2
+                return playerCharacter
+            case 4:
+                playerCharacter.SKILL_RELIGION += 1
+                playerCharacter.ATTRIBUTE_CONSTITUTION += 1
+                playerCharacter.SKILL_SEDUCTION += 1
+                return playerCharacter
+            case 5:
+                playerCharacter.SKILL_PERSUASION += 2
+                playerCharacter.ATTRIBUTE_CHARISMA += 1
+                return playerCharacter
+            default: print("Invalid optionChosen")
+                
+            }
+            
+        }else if (questionID == 8){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.SKILL_STEALTH += 1
+                playerCharacter.SKILL_SECURITY += 1
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 1
+                return playerCharacter
+            case 2:
+                playerCharacter.SKILL_HANDCOMBAT += 2
+                playerCharacter.ATTRIBUTE_STRENGTH += 1
+                return playerCharacter
+            case 3:
+                playerCharacter.ATTRIBUTE_CHARISMA += 1
+                playerCharacter.SKILL_BUISINESS += 2
+                return playerCharacter
+            case 4:
+                playerCharacter.ATTRIBUTE_CHARISMA += 2
+                playerCharacter.ATTRIBUTE_CONSTITUTION -= 1
+                playerCharacter.SKILL_SEDUCTION += 2
+                return playerCharacter
+            case 5:
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 1
+                playerCharacter.SKILL_LAW += 1
+                playerCharacter.SKILL_PERSUASION += 1
+                return playerCharacter
+            default: print("Invalid optionChosen")
+                
+            }
+            
+        }else if (questionID == 9){
+            
+            //Here we need to add items to inventory
+            
+        }else if (questionID == 10){
+            
+            switch (optionChosen){
+                
+            case 1:
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 2
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 2
+                playerCharacter.SKILL_SECURITY += 2
+                playerCharacter.SKILL_STEALTH += 2
+                // + Downtown appartment
+                // + 500$ equivalent to one months rent
+                return playerCharacter
+            case 2:
+                playerCharacter.SKILL_RIFLE += 2
+                playerCharacter.SKILL_PISTOL += 2
+                playerCharacter.SKILL_STREETSENSE += 2
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 2
+                playerCharacter.ATTRIBUTE_HEALTH += 2
+                playerCharacter.ATTRIBUTE_STRENGTH += 2
+                // + Crackhouse with rations
+                // + A crew of 4 gang members armed with knives and pistols
+                return playerCharacter
+            case 3:
+                playerCharacter.SKILL_SCIENCE += 2
+                playerCharacter.SKILL_COMPUTERS += 2
+                playerCharacter.SKILL_WRITING += 2
+                playerCharacter.SKILL_BUISINESS += 1
+                playerCharacter.SKILL_TEACHING += 2
+                playerCharacter.SKILL_LAW += 1
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 4
+                // + A university apparment
+                // + 200$ equivalent to one months rent
+                return playerCharacter
+            case 4:
+                playerCharacter.SKILL_FIRSTAID += 2
+                playerCharacter.SKILL_STREETSENSE += 2
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 1
+                playerCharacter.ATTRIBUTE_DEXTIRITY += 1
+                playerCharacter.ATTRIBUTE_HEALTH += 2
+                // + Homeless shelter
+                // +1 ATTRIBUTES except wisdom
+                return playerCharacter
+            case 5:
+                playerCharacter.ATTRIBUTE_INTELLIGENCE += 2
+                playerCharacter.ATTRIBUTE_CHARISMA += 2
+                playerCharacter.SKILL_LAW += 1
+                playerCharacter.SKILL_PERSUASION += 2
+                playerCharacter.SKILL_WRITING += 1
+                // + An apparment in an industrial complex
+                // + 100$ equivalent to one months rent
+                // + 50 juice
+                return playerCharacter
+            default: print("Invalid optionChosen")
+                
+            }
+            
+        }
+        
+        return playerCharacter
     }
-
-
+    
+    
+    
+    
+    
 }
